@@ -2,8 +2,9 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Decoration Sawblade
   layers:
   - Default
   - TransparentFX
@@ -41,3 +42,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Sawblade
+    uniqueID: 239755403
+    locked: 0
+  - name: Dirt
+    uniqueID: 1953589861
+    locked: 0
+  - name: Pipes u Metal
+    uniqueID: 3302782727
+    locked: 0
+  - name: Metal
+    uniqueID: 3006327983
+    locked: 0
+  - name: Pipes o Metal
+    uniqueID: 2758357073
+    locked: 0
+  - name: Pipes
+    uniqueID: 967577717
+    locked: 0
+  m_RenderingLayers:
+  - Default
