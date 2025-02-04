@@ -709,7 +709,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hellset_0: -4237078762338335439
+      hellset_1: -5002539347037624884
+      hellset_10: -4805623321430854246
+      hellset_11: -8434464559124355596
+      hellset_12: 7826396074878214737
+      hellset_13: -7843498941422062906
+      hellset_14: 6709914318981787132
+      hellset_15: -5405028473074885844
+      hellset_16: -3986738026601835984
+      hellset_17: 2524957061383608810
+      hellset_18: -6154499358948237175
+      hellset_19: -5129918998173360397
+      hellset_2: -8944389019452540774
+      hellset_20: -5473298036393439529
+      hellset_21: -6434145932353385686
+      hellset_22: 7952317698704606247
+      hellset_23: -2472073746375749932
+      hellset_3: 2121479523737819370
+      hellset_4: 7310062701886730443
+      hellset_5: -6910346012621749193
+      hellset_6: -2298717376182980570
+      hellset_7: -2321701754742281396
+      hellset_8: 5268439273567726500
+      hellset_9: 1343245659103907573
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

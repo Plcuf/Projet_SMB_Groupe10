@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      helltiles01_0: 6653268324080801743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -659,7 +659,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Forest_tile_setbackup_0: -5585368655097273549
+      Forest_tile_setbackup_1: 4527458587422962493
+      Forest_tile_setbackup_10: 6551768357754179842
+      Forest_tile_setbackup_11: 2339069400835564878
+      Forest_tile_setbackup_12: -7888600937645766092
+      Forest_tile_setbackup_13: -6670957983571303701
+      Forest_tile_setbackup_14: 8436585899548701251
+      Forest_tile_setbackup_15: -240487881898133054
+      Forest_tile_setbackup_16: 2605527312946043043
+      Forest_tile_setbackup_17: -8727781404550880618
+      Forest_tile_setbackup_18: -4489643475077608033
+      Forest_tile_setbackup_19: 2750538349072498878
+      Forest_tile_setbackup_2: 1630179747756718617
+      Forest_tile_setbackup_20: 128997893404976592
+      Forest_tile_setbackup_21: 2102266542155144507
+      Forest_tile_setbackup_3: 7107558030659279620
+      Forest_tile_setbackup_4: 3759475910096777154
+      Forest_tile_setbackup_5: 8559282372002375848
+      Forest_tile_setbackup_6: -3452678656204618921
+      Forest_tile_setbackup_7: -5188542352766272880
+      Forest_tile_setbackup_8: 8634452807409236208
+      Forest_tile_setbackup_9: 8695359214661662159
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

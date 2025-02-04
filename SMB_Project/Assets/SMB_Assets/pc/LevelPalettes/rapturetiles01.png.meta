@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rapturetiles01_0: -6418628807665668403
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
