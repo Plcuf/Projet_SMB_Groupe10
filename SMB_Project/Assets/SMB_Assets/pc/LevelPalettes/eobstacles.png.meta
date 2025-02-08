@@ -869,7 +869,7 @@ TextureImporter:
         width: 147
         height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -891,7 +891,7 @@ TextureImporter:
         width: 147
         height: 147
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -900,6 +900,28 @@ TextureImporter:
       bones: []
       spriteID: 8d071bfa4c9057044a48ef7f77df96e7
       internalID: -284688897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eobstacles_2
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 802
+        width: 63
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a792f881dc3dc964e90b78e471cd8716
+      internalID: -374953058
       vertices: []
       indices: 
       edges: []
@@ -934,6 +956,7 @@ TextureImporter:
       eobstacles_13: -1770350578
       eobstacles_14: 190679639
       eobstacles_15: -942669561
+      eobstacles_2: -374953058
       eobstacles_8: -666147239
       eobstacles_9: -412864788
   mipmapLimitGroupName: 

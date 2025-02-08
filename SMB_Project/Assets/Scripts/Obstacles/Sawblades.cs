@@ -16,7 +16,13 @@ public class Sawblades : MonoBehaviour
 
     private void FixedUpdate()
     {
-        gameObject.transform.Rotate(new Vector3(0, 0, -5));
+        if (gameObject.tag == "Decoration Sawblade")
+        {
+            gameObject.transform.Rotate(new Vector3(0, 0, 5));
+        } else {
+            gameObject.transform.Rotate(new Vector3(0, 0, -5));
+        }
+
     }
 
     public void ChangeSawblade(bool next = false)
