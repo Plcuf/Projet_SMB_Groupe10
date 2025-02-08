@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      retro3intro_0: 3326970273249710423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

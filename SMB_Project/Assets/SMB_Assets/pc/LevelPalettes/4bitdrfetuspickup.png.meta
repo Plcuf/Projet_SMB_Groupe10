@@ -959,7 +959,41 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      4bitdrfetuspickup_0: -3819013479549505871
+      4bitdrfetuspickup_1: 4854852366034694617
+      4bitdrfetuspickup_10: 3014760656023641937
+      4bitdrfetuspickup_11: -5085394215519941657
+      4bitdrfetuspickup_12: -6831371761437977754
+      4bitdrfetuspickup_13: -6928773559280250635
+      4bitdrfetuspickup_14: -122909951354446090
+      4bitdrfetuspickup_15: -664271805075313060
+      4bitdrfetuspickup_16: 2329064635833922367
+      4bitdrfetuspickup_17: 1190715534635163130
+      4bitdrfetuspickup_18: 2374014413315766938
+      4bitdrfetuspickup_19: -2653263728183809821
+      4bitdrfetuspickup_2: -1413164938197349535
+      4bitdrfetuspickup_20: 8345038860117415690
+      4bitdrfetuspickup_21: 6208554880869286475
+      4bitdrfetuspickup_22: 7842210098833265672
+      4bitdrfetuspickup_23: 2313195986756817516
+      4bitdrfetuspickup_24: 5095283575347027399
+      4bitdrfetuspickup_25: 4639352051831822987
+      4bitdrfetuspickup_26: 7153167300291134819
+      4bitdrfetuspickup_27: -2744604228720823366
+      4bitdrfetuspickup_28: 99946148271409074
+      4bitdrfetuspickup_29: -6768398133492194555
+      4bitdrfetuspickup_3: -4110223122318753597
+      4bitdrfetuspickup_30: -3645628218177697223
+      4bitdrfetuspickup_31: 3910328051640203444
+      4bitdrfetuspickup_32: 5018083575931777785
+      4bitdrfetuspickup_33: -4725329963143463022
+      4bitdrfetuspickup_4: 8581476648466611097
+      4bitdrfetuspickup_5: 6512821924472518595
+      4bitdrfetuspickup_6: 316147483428683924
+      4bitdrfetuspickup_7: 5431795867073229482
+      4bitdrfetuspickup_8: 2431315582629924339
+      4bitdrfetuspickup_9: -2816356690344568946
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

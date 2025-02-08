@@ -285,10 +285,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3336022278305415297}
-  - component: {fileID: 2238215236934751870}
   - component: {fileID: 2925566602508970769}
   m_Layer: 0
-  m_Name: Sawblade Launcher 1
+  m_Name: SawbladeLauncherShort
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -312,18 +311,6 @@ Transform:
   - {fileID: 5728401152645624857}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2238215236934751870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8995155183562406641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b250f62916141044f861e5f0726a987b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &2925566602508970769
 Animator:
   serializedVersion: 7
@@ -334,7 +321,7 @@ Animator:
   m_GameObject: {fileID: 8995155183562406641}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9b148669686744e429d68de17fd616a2, type: 2}
+  m_Controller: {fileID: 9100000, guid: e6d13f7a6402df047acb00eeec029119, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

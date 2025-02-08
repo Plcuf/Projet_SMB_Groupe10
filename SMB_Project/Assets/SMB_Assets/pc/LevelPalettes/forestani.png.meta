@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      forestani_0: -1923658571122100462
+      forestani_1: 5911404612285086942
+      forestani_2: 2427353023757576951
+      forestani_3: -3229179279037964798
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

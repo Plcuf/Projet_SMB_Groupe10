@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hellani_0: 1696949735652764510
+      hellani_1: 185346602697247642
+      hellani_2: 1130724771196749660
+      hellani_3: 5228196925265076443
+      hellani_4: 377503981870610881
+      hellani_5: -7971296848479059953
+      hellani_6: -2352842218250454790
+      hellani_7: -6406618231494528102
+      hellani_8: -8177524993893248951
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      retro5intro_0: -2468158534108971708
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

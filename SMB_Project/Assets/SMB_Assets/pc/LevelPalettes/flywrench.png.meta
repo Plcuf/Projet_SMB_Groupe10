@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flywrench_0: -7172847858431241951
+      flywrench_1: 1908444110281701117
+      flywrench_2: 7333534485798656152
+      flywrench_3: -8200233426778300249
+      flywrench_4: -2246779679417650231
+      flywrench_5: 7035897276220584903
+      flywrench_6: -3115050308611914027
+      flywrench_7: -6556929763350910149
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -784,7 +784,34 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kidintro_0: -2817107277099229993
+      kidintro_1: -8740197205299979976
+      kidintro_10: -8317084865586935426
+      kidintro_11: -992936236823900515
+      kidintro_12: -9084473518362729069
+      kidintro_13: 3289345525842587548
+      kidintro_14: 1219378700378483815
+      kidintro_15: 2301522515558214997
+      kidintro_16: 1609130325735175478
+      kidintro_17: 4308367521090046098
+      kidintro_18: -1907264307634925996
+      kidintro_19: -7774677701955764496
+      kidintro_2: 4228572732029673031
+      kidintro_20: -5128219045101266569
+      kidintro_21: -7444191602128770277
+      kidintro_22: -6588651065911396448
+      kidintro_23: 6451351337483473557
+      kidintro_24: -1749735614846465822
+      kidintro_25: -7692914277673415143
+      kidintro_26: -7286788476506168254
+      kidintro_3: -5721987968469004703
+      kidintro_4: 8903109092319728309
+      kidintro_5: 4185483963808205771
+      kidintro_6: 5141884861189752956
+      kidintro_7: -4275934973521351314
+      kidintro_8: -8165640510970840891
+      kidintro_9: -338040990460605316
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
