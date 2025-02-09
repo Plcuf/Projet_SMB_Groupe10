@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Decoration Sawblade
   - Wall
+  - Ground
+  - Kill
   layers:
   - Default
   - TransparentFX

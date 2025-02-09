@@ -3747,6 +3747,37 @@ Transform:
   - {fileID: 1615174961}
   m_Father: {fileID: 51766284}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &380726275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 380726276}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &380726276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380726275}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.75, y: -3.25, z: -0.072617516}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &441437005
 GameObject:
   m_ObjectHideFlags: 0
@@ -7148,6 +7179,10 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1293560267564248566, guid: fd23a98d85b9aa84ba0c7585720f6ce0, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 380726276}
     - target: {fileID: 6146221164162335068, guid: fd23a98d85b9aa84ba0c7585720f6ce0, type: 3}
       propertyPath: m_Mass
       value: 0.75
@@ -20939,6 +20974,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 618001318}
     m_Modifications:
+    - target: {fileID: -1322866410116979091, guid: efb30fdc450824b44976c5f72f3eb0c5, type: 3}
+      propertyPath: m_Radius
+      value: 2.75
+      objectReference: {fileID: 0}
     - target: {fileID: 1969728313336688035, guid: efb30fdc450824b44976c5f72f3eb0c5, type: 3}
       propertyPath: m_Name
       value: Left Sawblade 1
@@ -21167,3 +21206,4 @@ SceneRoots:
   - {fileID: 668866937}
   - {fileID: 649537345}
   - {fileID: 1442196693}
+  - {fileID: 380726276}
