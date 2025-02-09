@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     public bool bSprinting = false;
     public bool bJumped = false;
 
+    public GameObject destroyables;
+
     private PlayerControls ia;
     private InputAction moveAction;
     private InputAction jumpAction;
@@ -50,8 +52,8 @@ public class Player : MonoBehaviour
 
         //vérifie les collisions avec le sol et les murs
         bGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.6f, 3);
-        bLeftWall = Physics2D.Raycast(transform.position, Vector2.left, 0.7f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y+0.5f), Vector2.left, 0.7f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y-0.5f), Vector2.left, 0.7f, 3);
-        bRightWall = Physics2D.Raycast(transform.position, Vector2.right, 0.7f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y+0.5f), Vector2.right, 0.7f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y-0.5f), Vector2.right, 0.7f, 3);
+        bLeftWall = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y+0.4f), Vector2.left, 0.4f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y-0.4f), Vector2.left, 0.4f, 3);
+        bRightWall = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y+0.4f), Vector2.right, 0.4f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y-0.4f), Vector2.right, 0.4f, 3);
 
         if (bGrounded || !jumpAction.IsPressed())
         {
@@ -145,7 +147,24 @@ public class Player : MonoBehaviour
         if(collision.gameObject.tag == "Kill")
         {
             collision.gameObject.GetComponent<Sawblades>().ChangeSawblade(true);
-            transform.position = spawnPoint.position;
+            Die();
+        } else if (collision.gameObject.tag == "Decoration Sawblade")
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        transform.position = spawnPoint.position;
+
+        for (int i = 0; i < destroyables.transform.childCount; i++)
+        {
+            Transform child = destroyables.transform.GetChild(i);
+
+            child.gameObject.SetActive(false);
+
+            child.gameObject.SetActive(true);
         }
     }
 }

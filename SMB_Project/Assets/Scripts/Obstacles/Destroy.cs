@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using Unity.VisualScripting;
 
 public class Destroy : MonoBehaviour
 {
@@ -18,5 +17,11 @@ public class Destroy : MonoBehaviour
     void Break()
     {
         gameObject.SetActive(false);
+    }
+
+    public void Reset()
+    {
+        gameObject.SetActive(true);
+        StopCoroutine(WaitForBreak());
     }
 }
