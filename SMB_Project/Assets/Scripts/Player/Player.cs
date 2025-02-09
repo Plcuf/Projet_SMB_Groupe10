@@ -47,9 +47,11 @@ public class Player : MonoBehaviour
         bSprinting = sprintAction.IsPressed();
 
         //vérifie les collisions avec le sol et les murs
-        bGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.3f, 3);
-        bLeftWall = Physics2D.Raycast(transform.position, Vector2.left, 0.3f, 3);
-        bRightWall = Physics2D.Raycast(transform.position, Vector2.right, 0.3f, 3);
+        bGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.7f, 3);
+        bLeftWall = Physics2D.Raycast(transform.position, Vector2.left, 0.7f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y+0.5f), Vector2.left, 0.7f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y-0.5f), Vector2.left, 0.7f, 3);
+        bRightWall = Physics2D.Raycast(transform.position, Vector2.right, 0.7f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y+0.5f), Vector2.right, 0.7f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y-0.5f), Vector2.right, 0.7f, 3);
+
+        Debug.DrawLine(new Vector2(transform.position.x, transform.position.y+0.5f), new Vector2(transform.position.x, transform.position.y+0.5f) + Vector2.right, Color.red);
 
         if (bGrounded || !jumpAction.IsPressed())
         {
@@ -116,8 +118,8 @@ public class Player : MonoBehaviour
         if (!bJumped)
         {
             rb.linearVelocity = new Vector2(0, 0);
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            rb.AddForce(Vector2.right * jumpForce, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * jumpForce*3, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.right * jumpForce*5, ForceMode2D.Impulse);
             bJumped = true;
         }
     }
@@ -127,8 +129,8 @@ public class Player : MonoBehaviour
         if(!bJumped)
         {
             rb.linearVelocity = new Vector2(0, 0);
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            rb.AddForce(Vector2.left * jumpForce, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * jumpForce*3, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.left * jumpForce*5, ForceMode2D.Impulse);
             bJumped = true;
         }
     }
