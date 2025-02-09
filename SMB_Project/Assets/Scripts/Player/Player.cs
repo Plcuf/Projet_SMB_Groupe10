@@ -6,12 +6,14 @@ public class Player : MonoBehaviour
 {
     public int moveSpeed = 2;
     public int sprintMutliplier = 2;
-    public int jumpForce = 1;
+    public float jumpForce = 1.0f;
     public bool bGrounded = true;
     public bool bLeftWall = false;
     public bool bRightWall = false;
     public bool bSprinting = false;
     public bool bJumped = false;
+
+    private int maintainJumpTimer = 0;
 
     private PlayerControls ia;
     private InputAction moveAction;
@@ -47,15 +49,14 @@ public class Player : MonoBehaviour
         bSprinting = sprintAction.IsPressed();
 
         //vérifie les collisions avec le sol et les murs
-        bGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.7f, 3);
+        bGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.6f, 3);
         bLeftWall = Physics2D.Raycast(transform.position, Vector2.left, 0.7f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y+0.5f), Vector2.left, 0.7f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y-0.5f), Vector2.left, 0.7f, 3);
         bRightWall = Physics2D.Raycast(transform.position, Vector2.right, 0.7f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y+0.5f), Vector2.right, 0.7f, 3) || Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y-0.5f), Vector2.right, 0.7f, 3);
-
-        Debug.DrawLine(new Vector2(transform.position.x, transform.position.y+0.5f), new Vector2(transform.position.x, transform.position.y+0.5f) + Vector2.right, Color.red);
 
         if (bGrounded || !jumpAction.IsPressed())
         {
             bJumped = false;
+            maintainJumpTimer = 0;
         }
 
         if (moveAction.IsPressed())
@@ -118,8 +119,8 @@ public class Player : MonoBehaviour
         if (!bJumped)
         {
             rb.linearVelocity = new Vector2(0, 0);
-            rb.AddForce(Vector2.up * jumpForce*3, ForceMode2D.Impulse);
-            rb.AddForce(Vector2.right * jumpForce*5, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * jumpForce*1.5f, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.right * jumpForce*2, ForceMode2D.Impulse);
             bJumped = true;
         }
     }
@@ -129,14 +130,14 @@ public class Player : MonoBehaviour
         if(!bJumped)
         {
             rb.linearVelocity = new Vector2(0, 0);
-            rb.AddForce(Vector2.up * jumpForce*3, ForceMode2D.Impulse);
-            rb.AddForce(Vector2.left * jumpForce*5, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * jumpForce*1.5f, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.left * jumpForce*2, ForceMode2D.Impulse);
             bJumped = true;
         }
     }
 
     private void MaintainJump()
     {
-        rb.AddForce(Vector2.up*(rb.gravityScale/2), ForceMode2D.Force);
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
     }
 }
