@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4404070911630689324}
   - component: {fileID: -4429875428726258026}
+  - component: {fileID: -1322866410116979091}
   m_Layer: 0
   m_Name: SawbladeObject
-  m_TagString: Untagged
+  m_TagString: Kill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,6 +53,42 @@ MonoBehaviour:
   - {fileID: 797511935, guid: 34a5578a9364185468179a25d51a672b, type: 3}
   - {fileID: 227205388, guid: 34a5578a9364185468179a25d51a672b, type: 3}
   currentSawblade: 0
+--- !u!58 &-1322866410116979091
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969728313336688035}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2.75
 --- !u!1 &2473675581213418650
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,7 +163,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 239755403
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: -1835078089, guid: 34a5578a9364185468179a25d51a672b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -213,7 +250,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 239755403
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1835078089, guid: 34a5578a9364185468179a25d51a672b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

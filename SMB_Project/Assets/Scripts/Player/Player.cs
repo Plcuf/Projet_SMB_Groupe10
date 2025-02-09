@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
@@ -13,13 +14,13 @@ public class Player : MonoBehaviour
     public bool bSprinting = false;
     public bool bJumped = false;
 
-    private int maintainJumpTimer = 0;
-
     private PlayerControls ia;
     private InputAction moveAction;
     private InputAction jumpAction;
     private InputAction sprintAction;
     private Rigidbody2D rb;
+
+    public Transform spawnPoint;
 
     private void Awake()
     {
@@ -56,7 +57,6 @@ public class Player : MonoBehaviour
         if (bGrounded || !jumpAction.IsPressed())
         {
             bJumped = false;
-            maintainJumpTimer = 0;
         }
 
         if (moveAction.IsPressed())
@@ -139,5 +139,14 @@ public class Player : MonoBehaviour
     private void MaintainJump()
     {
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Kill")
+        {
+            collision.gameObject.GetComponent<Sawblades>().ChangeSawblade(true);
+            transform.position = spawnPoint.position;
+        }
     }
 }
